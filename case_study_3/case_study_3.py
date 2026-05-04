@@ -15,7 +15,7 @@ train_datagen = ImageDataGenerator(
 
 # Training data
 train_generator = train_datagen.flow_from_directory(
-"case_study_03/Dataset/train",
+"case_study_3/Dataset/train",
 target_size=(img_size, img_size),
 batch_size=batch_size,
 class_mode='categorical',
@@ -23,7 +23,7 @@ subset='training'
 )
 
 val_generator = train_datagen.flow_from_directory(
-"case_study_03/Dataset/train",
+"case_study_3/Dataset/train",
 target_size=(img_size, img_size),
 batch_size=batch_size,
 class_mode='categorical',
